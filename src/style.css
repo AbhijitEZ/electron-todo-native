@@ -4,3 +4,39 @@ body {
   max-width: 38rem;
   padding: 2rem;
 }
+
+.todo-header {
+  justify-content: space-between;
+}
+
+.todo-header button {
+  font-weight: 600;
+  border: none;
+  color: purple;
+  padding: 16px 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+.todo-header button:active,  .todo-header button:focus{
+  outline: none;
+  background-color: purple;
+  color: white;
+}
+
+.todo-container .add-todo-input {
+  display: none;
+  margin: 25px;
+}
+
+.todo-container .add-todo-input.show {
+  display: block;
+}
+
+.todo-container .items li {
+  cursor: pointer;
+  padding: 5px;
+}
+.todo-container .items li:hover {
+  background-color: #f4f4f4;
+}
